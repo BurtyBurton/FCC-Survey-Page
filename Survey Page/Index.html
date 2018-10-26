@@ -1,0 +1,89 @@
+<html lang="en">
+    <head>
+    <meta>
+
+    <!-- BootStrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="Css/Custom.css" type="text/css">
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Survey Form</h1>
+    <div class="container" id="form">
+        <form id="survey-form" action="">
+            <p id="description" name="Name" required>Let us know what you think</p>
+            <div class="row">
+                <div class="col-6 text-right">
+                    <label id="name-label" for="Name">Name: *</label>
+                </div>
+                <div class="col-6"><input id="name" type="text" placeholder="Enter Your Name Here" required></div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right">
+                    <label id="email-label" for="Email">Email: *</label>
+                </div>
+                <div class="col-6">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right">
+                    <label id="number-label" for="Age">Age: *</label>
+                </div>
+                <div class="col-6">
+                    <input id="number" name="Age" type="number" placeholder="Age" min="1" max="99" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right">
+                    <label for="dropdown">Which option best describes your current role?</label>
+                </div>
+                <div class="col-6">
+                    <select name="Dropdown" id="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="Student">Student</option>
+                        <option value="job">Work Full Time</option>
+                        <option value="nojob">Umemployed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right">
+                    <label for="recomend">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div id="radio" class="col-6">
+                    <input type="radio" name="recomend" value="Definately"> Definately <br>
+                    <input type="radio" name="recomend" value="Maybe"> Maybe <br>
+                    <input type="radio" name="recomend" value="Not Sure"> Not Sure <br>
+                    <input type="radio" name="recomend" value="No"> No <br>
+                </div>
+            </div>
+            <div id="checkboxes" class="row">
+                <div class="col-6 text-right">
+                    <label for="checkboxes">
+                        <pre>Things that should be improved in the future
+(Check all that apply):</pre></label>
+                </div>
+                <div class="col-6">
+                    <input type="checkbox" name="Layout" value="layout"> Layout <br>
+                    <input type="checkbox" name="Formatting" value="Formatting"> Formatting <br>
+                    <input type="checkbox" name="Content" value="Content"> Content <br>
+                </div>
+            </div>
+            <div id="comments" class="row">
+                <div class="col-6 text-right">
+                    <label for="comments">Any Comments or Suggestions?</label>
+                </div>
+                <div class="col-6">
+                    <textarea name="Comments" cols="20" rows="5"></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

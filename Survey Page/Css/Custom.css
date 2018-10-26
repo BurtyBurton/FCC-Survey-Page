@@ -1,0 +1,50 @@
+body {
+    background-color: aqua;
+}
+
+#title {
+    text-align: center;
+    font-size: 100;
+}
+
+#description {
+    text-align: center;
+    font-size: 50px;
+}
+
+#form {
+    background-color: white;
+    width: 50%;
+}
+
+#form input {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#form input:invalid {
+    border-color: red;
+}
+
+#radio {
+    margin-top: 1rem;
+}
+
+#radio input {
+    display: inline;
+    margin-bottom: 0.25rem;
+    
+}
+
+#checkboxes {
+    margin-top: 1rem;
+}
+
+#checkboxes input {
+    display: inline;
+    margin-bottom: 0.25rem;
+}
+
+#comments {
+    margin-top: 1rem;
+}
